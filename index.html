@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <link
+    rel="stylesheet"
+    as="style"
+    crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>📝 Todo</h1>
+
+    <form id="todo-form" class="todo-form">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="할 일을 입력하세요"
+        autocomplete="off"
+      />
+
+      <div class="date-row">
+        <label class="date-field">
+          <span>시작일</span>
+          <input type="date" id="start-date-input" />
+        </label>
+        <label class="date-field">
+          <span>마감일</span>
+          <input type="date" id="due-date-input" />
+        </label>
+      </div>
+
+      <button type="submit">추가</button>
+    </form>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">전체</button>
+      <button class="filter-btn" data-filter="active">진행 중</button>
+      <button class="filter-btn" data-filter="completed">완료</button>
+    </div>
+
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <div class="footer">
+      <span id="items-left">0개 남음</span>
+      <button id="clear-completed">완료 항목 삭제</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
