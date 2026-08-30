@@ -1,6 +1,6 @@
 # Todo App
 
-_NCS 보수교육 과제_
+gitHub Page URL : https://elldia.github.io/todo/
 
 HTML, CSS, JavaScript만으로 구현한 간단한 Todo(할 일 관리) 웹 앱입니다.
 별도의 서버나 빌드 과정 없이, 브라우저에서 `index.html`을 열면 바로 사용할 수 있습니다.
